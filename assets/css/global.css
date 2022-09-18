@@ -1,0 +1,18 @@
+@import "./content.css";
+@import "./colors.css";
+@import "./details.css";
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  height: 100%;
+
+  background-color: var(--bg);
+  color: var(--color);
+}
+
+#__nuxt,
+#__layout {
+  height: 100%;
+}

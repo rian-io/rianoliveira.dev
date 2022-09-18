@@ -1,0 +1,29 @@
+:root {
+  --color: #243746;
+  --color-secondary: #a4a8ac;
+  --color-table-header: #bfc2c4;
+  --color-table-outline: #d1d3d5;
+  --bg: #f3f5f4;
+  --bg-tag: rgba(21, 60, 255, 0.2);
+  --bg-glass: rgba(243, 245, 244, 0.7);
+  --link: blue;
+  --fancy: #1e90ff;
+}
+.dark-mode {
+  --color: #ebf1f4;
+  --color-secondary: #6f879b;
+  --color-table-header: #4d5e6c;
+  --color-table-outline: #37434d;
+  --bg: #091a28;
+  --bg-tag: rgba(0, 191, 255, 0.1);
+  --bg-glass: rgba(9, 26, 40, 0.7);
+  --link: #00bfff;
+}
+.sepia-mode {
+  --color: #433422;
+  --color-secondary: #8e857a;
+  --color-table-header: #afa9a1;
+  --color-table-outline: #c6c2bc;
+  --bg: #f1e7d0;
+  --bg-glass: rgba(241, 231, 208, 0.7);
+}
