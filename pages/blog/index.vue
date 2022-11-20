@@ -14,7 +14,7 @@
           <ul>
             <li v-for="article in list" :key="article._path" class="article">
               <NuxtLink :to="article._path">
-                  <span>{{ article.date}}</span>
+                  <span>{{ article.date }}</span>
                   <h2>{{ article.title }}</h2>
               </NuxtLink>
             </li>
