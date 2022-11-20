@@ -1,11 +1,20 @@
 <template>
   <main class="container">
     <article>
-      <ContentDoc />
+      <ContentDoc v-slot="{ doc }">
+        <h1>{{ doc.title }}</h1>
+        <span class="doc-publish-date">{{ doc.date }}</span>
+        <ContentRenderer :value="doc" />
+      </ContentDoc>
     </article>
     <Footer />
   </main>
 </template>
+
+<script setup lang="ts">
+
+</script>
+
 
 <style scoped>
 .container {

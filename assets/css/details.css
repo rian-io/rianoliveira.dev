@@ -25,3 +25,7 @@
   background-color: var(--bg-glass);
   backdrop-filter: blur(5px);
 }
+
+.doc-publish-date {
+  color: var(--color-secondary)
+}

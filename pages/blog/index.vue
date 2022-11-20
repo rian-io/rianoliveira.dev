@@ -12,10 +12,10 @@
         <!-- Default list slot -->
         <template v-slot="{ list }">
           <ul>
-            <li v-for="article in list" :key="article._path" class="article">
-              <NuxtLink :to="article._path">
-                  <span>{{ article.date }}</span>
-                  <h2>{{ article.title }}</h2>
+            <li v-for="doc in list" :key="doc._path" class="article">
+              <NuxtLink :to="doc._path">
+                  <span class="doc-publish-date">{{ doc.date }}</span>
+                  <h2>{{ doc.title }}</h2>
               </NuxtLink>
             </li>
           </ul>
@@ -55,8 +55,5 @@ h2::before {
 }
 ul {
   list-style: none;
-}
-span {
-  color: var(--color-secondary)
 }
 </style>
