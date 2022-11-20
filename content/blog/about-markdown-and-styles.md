@@ -1,6 +1,6 @@
 ---
 title: About Markdown and Styles
-date: 2022-03-14T15:50:56.241Z
+date: November 20, 2022
 tags:
   - about
   - markdown
@@ -38,7 +38,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
-#### Blockquote without attribution
+### Blockquote without attribution
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
@@ -58,7 +58,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 | Bob   | 27  |
 | Alice | 23  |
 
-#### Inline Markdown within tables
+### Inline Markdown within tables
 
 | Inline&nbsp;&nbsp;&nbsp; | Markdown&nbsp;&nbsp;&nbsp; | In&nbsp;&nbsp;&nbsp;                | Table  |
 | ------------------------ | -------------------------- | ----------------------------------- | ------ |
@@ -66,7 +66,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 
 ## Code Blocks
 
-#### Code block with backticks
+### Code block with backticks
 
 ```html
 <!DOCTYPE html>
