@@ -3,9 +3,9 @@
   --color-secondary: #a4a8ac;
   --color-table-header: #bfc2c4;
   --color-table-outline: #d1d3d5;
-  --bg: #f3f5f4;
+  --bg: #f0f8ff;
   --bg-tag: rgba(21, 60, 255, 0.2);
-  --bg-glass: rgba(243, 245, 244, 0.7);
+  --bg-glass: rgba(240, 248, 255, 0.7);
   --link: blue;
   --fancy: #1e90ff;
 }
