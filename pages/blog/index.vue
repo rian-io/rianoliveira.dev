@@ -54,6 +54,7 @@ h2::before {
   content: '';
 }
 ul {
+  margin: 0;
   list-style: none;
 }
 </style>
