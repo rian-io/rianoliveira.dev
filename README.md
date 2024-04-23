@@ -6,7 +6,7 @@ This application is my web site. It has the purposes of study the technologies I
 
 The design used is common in most of tools to build static sites, like [Hugo](https://themes.gohugo.io/themes/hugo-theme-codex/), if you want to use it without programming to much.
 
-## Made with:
+## Made with
 
 - [Nuxt 3](https://v3.nuxtjs.org)
 - [Color Mode](https://color-mode.nuxtjs.org)
@@ -35,11 +35,11 @@ pnpm install --shamefully-hoist
 
 ### Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on <http://localhost:3000>
 
 ```bash
 #yarn
-npm run dev
+yarn dev
 
 #npm
 npm run dev
