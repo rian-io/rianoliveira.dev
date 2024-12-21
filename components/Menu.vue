@@ -9,7 +9,7 @@
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :class="{ 'router-link-exact-active': isExact }" to="/blog" @click="toggle">
+          <NuxtLink :class="{ 'router-link-exact-active': isBlogRoute }" to="/blog" @click="toggle">
             blog
           </NuxtLink>
         </li>
@@ -27,7 +27,7 @@
 const state = reactive({ isActive: false })
 
 const route = useRoute()
-const isExact = computed(() => route.path.includes('blog'))
+const isBlogRoute = computed(() => route.path.includes('blog'))
 
 function toggle() {
   state.isActive = !state.isActive
