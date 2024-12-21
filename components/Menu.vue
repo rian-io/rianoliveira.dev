@@ -42,7 +42,6 @@ function toggle() {
 a {
   color: var(--color-secondary);
   text-decoration: none;
-  /*transition: color 0.5s ease;*/
 }
 
 a:active,

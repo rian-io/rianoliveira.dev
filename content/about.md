@@ -14,8 +14,6 @@ Layout first seen at <https://github.com/wutali/nextjs-netlify-blog-template>.
 
 Font [Ubuntu Font](https://design.ubuntu.com/font/) under license [Ubuntu Font License](https://ubuntu.com/legal/font-licence).
 
-Icons by [iconsout](https://iconscout.com) through [vue-unicons](https://github.com/Iconscout/vue-unicons).
-
 ## License
 
 Copyright 2021 Rian Oliveira
