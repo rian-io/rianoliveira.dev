@@ -1,6 +1,6 @@
 # rianoliveira.dev
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9eff9025-fc7b-4831-a75e-6ced7e61015c/deploy-status)](https://app.netlify.com/sites/rianoliveira/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/53c14134-3e2a-408d-b823-9c56fca2bd35/deploy-status)](https://app.netlify.com/sites/rianoliveira/deploys)
 
 This application is my web site. It has the purposes of study the technologies I like in front-end and to be a kind of notebook to general studies.
 
