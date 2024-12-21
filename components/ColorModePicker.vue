@@ -1,12 +1,9 @@
 <template>
   <div class="picker glass">
-   <ul>
-      <li
-        v-for="mode in Object.keys(modes)"
-        :key="mode"
+    <ul>
+      <li v-for="mode in Object.keys(modes)" :key="mode"
         :class="{ preferred: !$colorMode.unknown && mode === $colorMode.preference }"
-        @click="$colorMode.preference = mode"
-      >
+        @click="$colorMode.preference = mode">
         <component :is="modes[mode]" />
       </li>
     </ul>
@@ -15,11 +12,11 @@
 
 <script setup>
 const modes = {
-                'system': resolveComponent('IconDesktop'),
-                'light': resolveComponent('IconSun'),
-                'dark': resolveComponent('IconMoon'),
-                'sepia': resolveComponent('IconCoffee')
-              }
+  'system': resolveComponent('IconDesktop'),
+  'light': resolveComponent('IconSun'),
+  'dark': resolveComponent('IconMoon'),
+  'sepia': resolveComponent('IconCoffee')
+}
 </script>
 
 <style scoped>
@@ -30,11 +27,13 @@ const modes = {
   z-index: 1;
   margin-bottom: 1rem;
 }
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 li {
   width: 24px;
   height: 24px;
@@ -42,12 +41,15 @@ li {
   color: var(--color-secondary);
   cursor: pointer;
 }
+
 li:not(:first-child) {
   margin-left: 1em;
 }
+
 li:hover {
   color: var(--color);
 }
+
 .preferred {
   color: var(--color);
 }

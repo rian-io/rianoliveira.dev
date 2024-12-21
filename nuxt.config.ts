@@ -3,6 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
+
   app: {
     head: {
       htmlAttrs: {
@@ -19,20 +20,26 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   css: [
     'assets/css/global.css'
   ],
+
   modules: [
     '@nuxtjs/color-mode',
     '@nuxt/content'
   ],
+
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
   },
+
   content: {
     navigation: {
       fields: ['date']
     }
-  }
+  },
+
+  compatibilityDate: '2024-12-21'
 })

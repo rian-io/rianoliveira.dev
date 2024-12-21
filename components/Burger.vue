@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'active': active}" class="burger glass" @click="$emit('toggle')">
+  <div :class="{ 'active': active }" class="burger glass" @click="$emit('toggle')">
     <div class="meat meat-1" />
     <div class="meat meat-2" />
     <div class="meat meat-3" />
@@ -8,7 +8,7 @@
 
 <script setup>
 defineProps({
-  active: { 
+  active: {
     type: Boolean,
     required: true,
     default: true
@@ -27,6 +27,7 @@ defineProps({
   z-index: 2;
   background-color: var(--bg-glass);
 }
+
 .meat {
   position: absolute;
   width: 28px;
@@ -36,24 +37,31 @@ defineProps({
   left: calc(50% - 28px / 2);
   transition: all 150ms ease-in;
 }
+
 .meat-1 {
   transform: translateY(-10px);
 }
+
 .meat-2 {
   width: calc(28px - 6px);
 }
+
 .meat-3 {
   transform: translateY(10px);
 }
+
 .active .meat-1 {
   transform: rotate(45deg);
 }
+
 .active .meat-2 {
   opacity: 0;
 }
+
 .active .meat-3 {
   transform: rotate(-45deg);
 }
+
 @media (min-width: 769px) {
   .burger {
     display: none;
