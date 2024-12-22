@@ -4,15 +4,15 @@ title: About
 
 ## References
 
-Made with [Nuxt.js](https://nuxtjs.org) as static site and [Create a Blog with Nuxt Content](https://nuxtjs.org/blog/creating-blog-with-nuxt-content) as main reference to blog.
+This static site was built using [Nuxt.js](https://nuxtjs.org), with the blog functionality primarily based on the guide [Create a Blog with Nuxt Content](https://nuxtjs.org/blog/creating-blog-with-nuxt-content).
 
-[Netlify CMS](https://www.netlifycms.org/docs/intro/) and [nuxtjs/content](https://content.nuxtjs.org) to manager content.
+Content management is handled using [Netlify CMS](https://www.netlifycms.org/docs/intro/) and [nuxtjs/content](https://content.nuxtjs.org).
 
-<https://github.com/Knogobert/ntn-boilerplate> as implementation reference of Nuxt.js with Netlify CMS.
+The implementation references the boilerplate repository [ntn-boilerplate](https://github.com/Knogobert/ntn-boilerplate), which demonstrates the integration of Nuxt.js with Netlify CMS.
 
-Layout first seen at <https://github.com/wutali/nextjs-netlify-blog-template>.
+The layout design was inspired by the template found at [nextjs-netlify-blog-template](https://github.com/wutali/nextjs-netlify-blog-template).
 
-Font [Ubuntu Font](https://design.ubuntu.com/font/) under license [Ubuntu Font License](https://ubuntu.com/legal/font-licence).
+The site uses the [Ubuntu Font](https://design.ubuntu.com/font/), licensed under the [Ubuntu Font License](https://ubuntu.com/legal/font-licence).
 
 ## License
 
