@@ -1,0 +1,12 @@
+.slide-enter-active,
+.slide-leave-active {
+    transition: transform 1s ease;
+}
+
+.slide-enter-from {
+    transform: translateY(200%);
+}
+
+.slide-leave-to {
+    transform: translateY(-200%);
+}

@@ -1,6 +1,7 @@
 @import "./content.css";
 @import "./colors.css";
 @import "./details.css";
+@import "./transitions.css";
 
 html,
 body {

@@ -1,10 +1,9 @@
 <template>
-  <main class="container">
+  <content class="container">
     <article>
       <ContentDoc />
     </article>
-    <Footer />
-  </main>
+  </content>
 </template>
 
 <style scoped>
