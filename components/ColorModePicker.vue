@@ -22,10 +22,10 @@ const modes = {
 <style scoped>
 .picker {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 1.25rem;
   z-index: 1;
-  margin-bottom: 1rem;
+  padding: 6px 12px;
 }
 
 ul {
