@@ -14,6 +14,8 @@ The layout design was inspired by the template found at [nextjs-netlify-blog-tem
 
 The site uses the [Ubuntu Font](https://design.ubuntu.com/font/), licensed under the [Ubuntu Font License](https://ubuntu.com/legal/font-licence).
 
+Please note that some examples and values in the resources mentioned might be outdated by the time you view them.
+
 ## License
 
 Copyright 2021 Rian Oliveira
