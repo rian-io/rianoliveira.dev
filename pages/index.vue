@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1>
-        Hi, I am Rian Oliveira<span class="fancy">.</span>
+        Hi, I am <span class="break"> <br> </span> Rian Oliveira<span class="fancy">.</span>
       </h1>
       <a href="https://www.linkedin.com/in/rianoliveira/" target="_blank" rel="noopener"><span
           class="handle">@rianoliveira</span></a>
@@ -22,14 +22,6 @@ definePageMeta({
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 auto;
-  padding: 0 1.5rem;
-}
-
 h1 {
   margin: 0;
   font-size: 2.5rem;
@@ -47,6 +39,14 @@ h2::before {
   content: '';
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  padding: 0 1.5rem;
+}
+
 .handle {
   display: inline-block;
   margin-top: 0.275em;
@@ -56,6 +56,16 @@ h2::before {
 
 .fancy {
   color: var(--fancy);
+}
+
+.break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .break {
+    display: inline;
+  }
 }
 
 @media (min-width: 960px) {
