@@ -6,9 +6,7 @@
     <nav>
       <Menu />
     </nav>
-    <Transition>
-      <NuxtLayout />
-    </Transition>
+    <NuxtLayout />
   </div>
 </template>
 

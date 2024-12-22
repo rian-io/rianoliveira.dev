@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   ssr: true,
 
   app: {
-    pageTransition: { name: 'slide', mode: 'out-in' },
     head: {
       htmlAttrs: {
         lang: 'en'

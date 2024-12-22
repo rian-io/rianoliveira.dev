@@ -17,7 +17,7 @@ useHead({
   title: 'Home'
 })
 definePageMeta({
-  pageTransition: { name: 'slide', mode: 'out-in' }
+  pageTransition: { name: 'index-transition', mode: 'out-in' }
 });
 </script>
 

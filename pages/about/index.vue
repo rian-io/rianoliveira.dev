@@ -3,8 +3,15 @@
     <article>
       <ContentDoc />
     </article>
+    <Footer />
   </content>
 </template>
+
+<script setup>
+definePageMeta({
+  pageTransition: { name: 'about-transition', mode: 'out-in' }
+});
+</script>
 
 <style scoped>
 .container {
