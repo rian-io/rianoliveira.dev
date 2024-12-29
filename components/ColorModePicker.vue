@@ -68,18 +68,18 @@ li:hover {
 
 .tooltip {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -2rem;
   left: 50%;
   transform: translateX(-50%);
   background: var(--background);
   color: var(--color);
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 0px 8px;
   font-size: 0.65rem;
   white-space: nowrap;
   box-shadow: 0 2px 2px var(--shadow);
   pointer-events: none;
   border: 0.1px solid var(--color-secondary);
+  border-radius: 4px;
 }
 
 li:last-child .tooltip {
