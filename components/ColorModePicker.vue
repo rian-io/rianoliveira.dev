@@ -48,6 +48,7 @@ li:not(:first-child) {
 
 li:hover {
   color: var(--color);
+  transform: scale(1.1);
 }
 
 .preferred {
