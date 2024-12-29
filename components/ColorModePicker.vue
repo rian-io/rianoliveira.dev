@@ -85,4 +85,10 @@ li:hover {
 li:last-child .tooltip {
   left: -1.25rem;
 }
+
+@media screen and (max-width: 768px) {
+  .tooltip {
+    display: none;
+  }
+}
 </style>
