@@ -9,6 +9,7 @@
   --link: blue;
   --fancy: #1e90ff;
 }
+
 .dark-mode {
   --color: #ebf1f4;
   --color-secondary: #6f879b;
@@ -19,9 +20,10 @@
   --bg-glass: rgba(9, 26, 40, 0.7);
   --link: #00bfff;
 }
+
 .sepia-mode {
   --color: #433422;
-  --color-secondary: #8e857a;
+  --color-secondary: #b3ada6;
   --color-table-header: #afa9a1;
   --color-table-outline: #c6c2bc;
   --bg: #f1e7d0;
