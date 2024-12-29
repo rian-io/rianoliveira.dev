@@ -62,6 +62,10 @@ li:hover {
   transform: scale(1.1);
 }
 
+li:last-child .tooltip {
+  left: -1.25rem;
+}
+
 .preferred {
   color: var(--color);
 }
@@ -80,10 +84,6 @@ li:hover {
   pointer-events: none;
   border: 0.1px solid var(--color-secondary);
   border-radius: 4px;
-}
-
-li:last-child .tooltip {
-  left: -1.25rem;
 }
 
 @media screen and (max-width: 768px) {
