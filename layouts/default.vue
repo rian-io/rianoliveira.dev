@@ -8,7 +8,8 @@
 
 <style scoped>
 .root {
-  display: block;
+  display: flex;
+  flex: 1 0 auto;
   padding: 4rem 0;
   box-sizing: border-box;
   height: 100%;
@@ -19,12 +20,7 @@ main {
   min-height: 100%;
 }
 
-@media (min-width: 769px) {
-  .root {
-    display: flex;
-    flex: 1 0 auto;
-  }
-
+@media (max-width: 769px) {
   main {
     flex: 1 0 auto;
   }
