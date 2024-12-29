@@ -3,8 +3,9 @@
     <ul>
       <li v-for="mode in Object.keys(modes)" :key="mode"
         :class="{ preferred: !$colorMode.unknown && mode === $colorMode.preference }"
-        @click="$colorMode.preference = mode">
+        @click="$colorMode.preference = mode" @mouseenter="hoveredMode = mode" @mouseleave="hoveredMode = null">
         <component :is="modes[mode]" />
+        <span v-if="hoveredMode === mode" class="tooltip">Switch to {{ tooltips[mode] }} mode</span>
       </li>
     </ul>
   </div>
@@ -16,7 +17,16 @@ const modes = {
   'light': resolveComponent('IconSun'),
   'dark': resolveComponent('IconMoon'),
   'sepia': resolveComponent('IconCoffee')
-}
+};
+
+const tooltips = {
+  system: 'System',
+  light: 'Light',
+  dark: 'Dark',
+  sepia: 'Sepia',
+};
+
+const hoveredMode = ref(null);
 </script>
 
 <style scoped>
@@ -35,6 +45,7 @@ ul {
 }
 
 li {
+  position: relative;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -53,5 +64,25 @@ li:hover {
 
 .preferred {
   color: var(--color);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--background);
+  color: var(--color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 2px var(--shadow);
+  pointer-events: none;
+  border: 0.1px solid var(--color-secondary);
+}
+
+li:last-child .tooltip {
+  left: -1.25rem;
 }
 </style>

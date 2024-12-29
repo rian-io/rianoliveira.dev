@@ -6,8 +6,9 @@
   --bg: #ffffff;
   --bg-tag: rgba(21, 60, 255, 0.2);
   --bg-glass: rgba(255, 255, 255, 0.7);
-  --link: blue;
   --fancy: #1e90ff;
+  --link: blue;
+  --shadow: rgba(36, 55, 70, 0.2);
 }
 
 .dark-mode {
@@ -19,6 +20,7 @@
   --bg-tag: rgba(0, 191, 255, 0.1);
   --bg-glass: rgba(9, 26, 40, 0.7);
   --link: #00bfff;
+  --shadow: rgba(235, 241, 244, 0.2);
 }
 
 .sepia-mode {
@@ -28,4 +30,5 @@
   --color-table-outline: #c6c2bc;
   --bg: #f1e7d0;
   --bg-glass: rgba(241, 231, 208, 0.7);
+  --shadow: rgba(67, 52, 34, 0.2);
 }
