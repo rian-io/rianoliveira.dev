@@ -8,6 +8,9 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'About'
+})
 definePageMeta({
   pageTransition: { name: 'about-transition', mode: 'out-in' }
 });
