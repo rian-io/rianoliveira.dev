@@ -10,7 +10,7 @@
     "@nuxt/content": "3.2.2",
     "@nuxtjs/color-mode": "3.5.2",
     "better-sqlite3": "^11.8.1",
-    "nuxt": "3.15.4"
+    "nuxt": "3.16.0"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.6.1"
