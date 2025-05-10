@@ -1,5 +1,5 @@
 <template>
-  <main class="root">
+  <div class="root">
     <header>
       <ColorModePicker />
     </header>
@@ -7,28 +7,23 @@
       <Menu />
     </nav>
     <NuxtPage />
-  </main>
+  </div>
 </template>
 
 <style scoped>
 .root {
   display: flex;
   flex: 1 0 auto;
+  flex-direction: column;
   padding: 4rem 0;
   box-sizing: border-box;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-main {
-  display: flex;
-  min-height: 100%;
-  width: 100%;
-}
-
 @media (max-width: 769px) {
-  main {
+  .root {
+    display: flex;
     flex: 1 0 auto;
   }
 }

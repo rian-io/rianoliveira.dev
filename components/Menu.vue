@@ -35,7 +35,7 @@ onMounted(() => {
   const checkScreenSize = () => {
     isLargeScreen.value = window.innerWidth >= 1080
   }
-  
+
   checkScreenSize()
   window.addEventListener('resize', checkScreenSize)
 })
@@ -82,6 +82,7 @@ li:last-child {
 }
 
 .navigation {
+  position: fixed;
   width: 0;
   padding-top: 2rem;
 }
