@@ -3,7 +3,7 @@
     <Burger :active="state.isActive" @toggle="toggle" />
     <div class="navigation">
       <transition name="slide">
-        <ul v-show="!isHidden" class="menu-animation">
+        <ul v-show="!isHidden || isLargeScreen" class="menu-animation">
           <li>
             <NuxtLink to="/" @click="toggle">
               home
@@ -23,11 +23,26 @@
 <script setup>
 const state = reactive({ isActive: false })
 const isHidden = ref(true)
+const isLargeScreen = ref(false)
 
 function toggle() {
   state.isActive = !state.isActive
   isHidden.value = !isHidden.value
 }
+
+// Handle screen size changes
+onMounted(() => {
+  const checkScreenSize = () => {
+    isLargeScreen.value = window.innerWidth >= 1080
+  }
+  
+  checkScreenSize()
+  window.addEventListener('resize', checkScreenSize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkScreenSize)
+})
 </script>
 
 <style scoped>
@@ -56,10 +71,6 @@ ul {
   z-index: 1;
 }
 
-ul.hidden {
-  opacity: 0;
-}
-
 li {
   margin-bottom: 1.75rem;
   font-size: 2rem;
@@ -85,15 +96,17 @@ li:last-child {
 
 @media (min-width: 1080px) {
   ul {
-    opacity: 1;
+    opacity: 1 !important;
     width: 7rem;
     top: auto;
     display: block;
-    transform: translateY(0);
+    transform: translateY(0) !important;
+    position: relative;
+    height: auto;
   }
 
-  ul.hidden {
-    opacity: 1;
+  .navigation {
+    width: auto;
   }
 
   li {
