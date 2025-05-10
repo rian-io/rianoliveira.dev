@@ -19,7 +19,7 @@ definePageMeta({
   }
 })
 
-const { data: about } = await useAsyncData(() => queryCollection('content').path('/about').first())
+const { data: about } = await useAsyncData(() => queryCollection('about').path('/about').first())
 
 useSeoMeta({
   title: about.value?.title,
