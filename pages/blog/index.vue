@@ -1,12 +1,9 @@
 <template>
   <main class="container">
     <section class="page-section">
-      <!-- Render list of all articles in ./content/blog using `path` -->
-      <!-- Provide only defined fields in the `:query` prop -->
       <ContentList path="/blog" :query="{
         only: ['title', 'date', '_path'],
       }">
-        <!-- Default list slot -->
         <template v-slot="{ list }">
           <ul>
             <li v-for="doc in list" :key="doc._path" class="article">
