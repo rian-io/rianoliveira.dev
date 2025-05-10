@@ -1,10 +1,10 @@
 <template>
-  <content class="container">
+  <main class="container">
     <article>
-      <ContentDoc />
+      <ContentDoc path="/about" />
     </article>
     <Footer />
-  </content>
+  </main>
 </template>
 
 <script setup>
@@ -12,7 +12,10 @@ useHead({
   title: 'About'
 })
 definePageMeta({
-  pageTransition: { name: 'about-transition', mode: 'out-in' }
+  pageTransition: {
+    name: 'about-transition',
+    mode: 'out-in'
+  }
 });
 </script>
 

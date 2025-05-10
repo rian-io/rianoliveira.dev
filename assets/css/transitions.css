@@ -1,29 +1,29 @@
 .index-transition-enter-active,
 .index-transition-leave-active {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .index-transition-enter-from {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-100px);
 }
 
 .index-transition-leave-to {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-100px);
 }
 
 .about-transition-enter-active,
 .about-transition-leave-active {
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .about-transition-enter-from {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100px);
 }
 
 .about-transition-leave-to {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100px);
 }

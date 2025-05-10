@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main class="container">
     <div>
       <h1>
         Hi, I am <span class="break"> <br> </span> Rian Oliveira<span class="fancy">.</span>
@@ -9,7 +9,7 @@
       <h2>A Computer Science student.</h2>
       <SocialList />
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup>
@@ -17,7 +17,10 @@ useHead({
   title: 'Home'
 })
 definePageMeta({
-  pageTransition: { name: 'index-transition', mode: 'out-in' }
+  pageTransition: {
+    name: 'index-transition',
+    mode: 'out-in'
+  }
 });
 </script>
 

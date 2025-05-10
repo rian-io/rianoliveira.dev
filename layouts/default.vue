@@ -1,8 +1,6 @@
 <template>
   <main class="root">
-    <Transition>
-      <NuxtPage />
-    </Transition>
+    <NuxtPage />
   </main>
 </template>
 
@@ -13,11 +11,14 @@
   padding: 4rem 0;
   box-sizing: border-box;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 main {
   display: flex;
   min-height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 769px) {

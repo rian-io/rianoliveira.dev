@@ -20,15 +20,18 @@ useHead({
 
 <style scoped>
 .app-vue {
-  display: block;
-  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   box-sizing: border-box;
-  height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 main {
   display: flex;
   min-height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 769px) {

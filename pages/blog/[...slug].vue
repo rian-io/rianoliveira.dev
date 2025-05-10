@@ -11,6 +11,18 @@
   </main>
 </template>
 
+<script setup>
+useHead({
+  title: 'Blog Post'
+})
+definePageMeta({
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+  }
+});
+</script>
+
 <style scoped>
 .container {
   display: block;

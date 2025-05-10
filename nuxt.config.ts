@@ -35,11 +35,8 @@ export default defineNuxtConfig({
     fallback: 'dark', // fallback value if not system preference found
   },
 
-  content: {
-    navigation: {
-      fields: ['date']
-    }
-  },
+  // @ts-ignore
+  content: {},
 
   compatibilityDate: '2024-12-21'
 })

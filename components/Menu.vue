@@ -1,7 +1,7 @@
 <template>
   <div>
     <Burger :active="state.isActive" @toggle="toggle" />
-    <div :class="{ 'active': state.isActive, 'disable': !state.isActive }" class="navigation">
+    <div class="navigation">
       <ul class="menu-animation">
         <li>
           <NuxtLink to="/" @click="toggle">
@@ -29,6 +29,7 @@ function toggle() {
 <style scoped>
 .navigation {
   width: 0;
+  padding-top: 1rem;
 }
 
 a {
@@ -36,7 +37,6 @@ a {
   text-decoration: none;
 }
 
-a:active,
 a:hover {
   color: var(--color);
 }

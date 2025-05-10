@@ -26,6 +26,12 @@
 useHead({
   title: 'All Posts'
 })
+definePageMeta({
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+  }
+});
 </script>
 
 <style scoped>
