@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <article>
-      <ContentDoc path="/about" />
+      <ContentRenderer :value="about" />
     </article>
     <Footer />
   </main>
@@ -11,12 +11,20 @@
 useHead({
   title: 'About'
 })
+
 definePageMeta({
   pageTransition: {
     name: 'about-transition',
     mode: 'out-in'
   }
-});
+})
+
+const { data: about } = await useAsyncData(() => queryCollection('content').path('/about').first())
+
+useSeoMeta({
+  title: about.value?.title,
+  description: about.value?.description
+})
 </script>
 
 <style scoped>
