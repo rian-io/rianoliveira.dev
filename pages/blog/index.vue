@@ -1,21 +1,13 @@
 <template>
   <main class="container">
-    <section class="page-section">
-      <ContentList path="/blog" :query="{
-        only: ['title', 'date', '_path'],
-      }">
-        <template v-slot="{ list }">
-          <ul>
-            <li v-for="doc in list" :key="doc._path" class="article">
-              <NuxtLink :to="doc._path">
-                <span class="doc-publish-date">{{ doc.date }}</span>
-                <h2>{{ doc.title }}</h2>
-              </NuxtLink>
-            </li>
-          </ul>
-        </template>
-      </ContentList>
-    </section>
+    <ul v-if="data">
+      <li v-for="doc in data" :key="doc.path" class="article">
+        <NuxtLink :to="doc.path">
+          <span class="doc-publish-date">{{ doc.date }}</span>
+          <h2>{{ doc.title }}</h2>
+        </NuxtLink>
+      </li>
+    </ul>
   </main>
 </template>
 
@@ -23,12 +15,19 @@
 useHead({
   title: 'All Posts'
 })
-definePageMeta({
+
+/*definePageMeta({
   pageTransition: {
     name: 'page',
     mode: 'out-in'
   }
-});
+})*/
+
+const { data: data } = await useAsyncData('blog', () => {
+  return queryCollection('blog')
+    .limit(5)
+    .all()
+})
 </script>
 
 <style scoped>
