@@ -2,27 +2,31 @@
   <div>
     <Burger :active="state.isActive" @toggle="toggle" />
     <div class="navigation">
-      <ul class="menu-animation">
-        <li>
-          <NuxtLink to="/" @click="toggle">
-            home
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about" @click="toggle">
-            about
-          </NuxtLink>
-        </li>
-      </ul>
+      <transition name="slide">
+        <ul v-show="!isHidden" class="menu-animation">
+          <li>
+            <NuxtLink to="/" @click="toggle">
+              home
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/about" @click="toggle">
+              about
+            </NuxtLink>
+          </li>
+        </ul>
+      </transition>
     </div>
   </div>
 </template>
 
 <script setup>
 const state = reactive({ isActive: false })
+const isHidden = ref(true)
 
 function toggle() {
   state.isActive = !state.isActive
+  isHidden.value = !isHidden.value
 }
 </script>
 
@@ -37,7 +41,6 @@ a:hover {
 }
 
 ul {
-  opacity: 0;
   width: 100%;
   height: 100vh;
   text-align: right;
@@ -51,6 +54,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+}
+
+ul.hidden {
+  opacity: 0;
 }
 
 li {
@@ -76,7 +83,7 @@ li:last-child {
   color: var(--color);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1080px) {
   ul {
     opacity: 1;
     width: 7rem;
@@ -85,21 +92,26 @@ li:last-child {
     transform: translateY(0);
   }
 
+  ul.hidden {
+    opacity: 1;
+  }
+
   li {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 769px) {
-  .disable ul {
-    transform: translateX(100%);
-    transition-duration: 400ms;
+@media (max-width: 1080px) {
+  li {
+    line-height: 3rem;
   }
 
-  .active ul {
-    opacity: 1;
-    transform: translateX(0);
-    transition-duration: 400ms;
+  .disable ul {
+    width: 100%;
+  }
+
+  .menu-animation {
+    width: 100%;
   }
 }
 </style>

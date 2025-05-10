@@ -62,7 +62,7 @@ defineProps({
   transform: rotate(-45deg);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1080px) {
   .burger {
     display: none;
   }

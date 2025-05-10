@@ -34,7 +34,7 @@ const hoveredMode = ref(null);
   position: fixed;
   top: 1rem;
   right: 1.25rem;
-  z-index: 1;
+  z-index: 2;
   padding: 6px 12px;
 }
 
@@ -86,8 +86,8 @@ li:last-child .tooltip {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
-  .tooltip {
+@media screen and (max-width: 1080px) {
+  .picker {
     display: none;
   }
 }
