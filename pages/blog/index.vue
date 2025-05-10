@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <div class="container">
     <ul v-if="data">
       <li v-for="doc in data" :key="doc.path" class="article">
         <NuxtLink :to="doc.path">
@@ -8,7 +8,7 @@
         </NuxtLink>
       </li>
     </ul>
-  </main>
+  </div>
 </template>
 
 <script setup>
@@ -36,7 +36,7 @@ const { data: data } = await useAsyncData('blog', () => {
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   box-sizing: border-box;
   z-index: 0;
 }

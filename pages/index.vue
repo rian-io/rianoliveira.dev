@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <div class="container">
     <div>
       <h1>
         Hi, I am <span class="break"> <br> </span> Rian Oliveira<span class="fancy">.</span>
@@ -9,7 +9,7 @@
       <h2>A Computer Science student.</h2>
       <SocialList />
     </div>
-  </main>
+  </div>
 </template>
 
 <script setup>

@@ -1,13 +1,5 @@
 <template>
-  <div class="app-vue">
-    <header>
-      <ColorModePicker />
-    </header>
-    <nav>
-      <Menu />
-    </nav>
-    <NuxtLayout />
-  </div>
+  <NuxtLayout class="app-vue" />
 </template>
 
 <script setup>

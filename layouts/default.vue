@@ -1,5 +1,11 @@
 <template>
   <main class="root">
+    <header>
+      <ColorModePicker />
+    </header>
+    <nav>
+      <Menu />
+    </nav>
     <NuxtPage />
   </main>
 </template>

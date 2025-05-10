@@ -27,11 +27,6 @@ function toggle() {
 </script>
 
 <style scoped>
-.navigation {
-  width: 0;
-  padding-top: 1rem;
-}
-
 a {
   color: var(--color-secondary);
   text-decoration: none;
@@ -66,6 +61,15 @@ li {
 
 li:last-child {
   margin-bottom: 0;
+}
+
+.navigation {
+  width: 0;
+  padding-top: 2rem;
+}
+
+.menu-animation {
+  width: 12rem;
 }
 
 .router-link-exact-active {
