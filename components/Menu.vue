@@ -92,8 +92,8 @@ li:last-child {
 
 .navigation {
   position: fixed;
-  width: 0;
-  padding-top: 2rem;
+  padding-top: 5rem;
+  width: 100%;
 }
 
 .menu-animation {
@@ -127,6 +127,10 @@ li:last-child {
 @media (max-width: 1080px) {
   li {
     line-height: 3rem;
+  }
+
+  .navigation {
+    position: relative;
   }
 
   .disable ul {

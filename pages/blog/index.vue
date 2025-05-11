@@ -36,7 +36,7 @@ const { data: data } = await useAsyncData('blog', () => {
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 5rem 1.5rem 0 1.5rem;
   box-sizing: border-box;
   z-index: 0;
 }

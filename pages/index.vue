@@ -45,11 +45,8 @@ h2::before {
 .container {
   display: flex;
   min-height: 100vh;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  flex: 1 1 auto;
-  padding: 0 1.5rem;
 }
 
 .handle {

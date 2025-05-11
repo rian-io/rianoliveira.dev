@@ -15,7 +15,6 @@
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
-  padding: 4rem 0;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
