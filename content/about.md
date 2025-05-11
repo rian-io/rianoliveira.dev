@@ -18,7 +18,7 @@ Please note that some examples and values in the resources mentioned might be ou
 
 ## License
 
-Copyright 2021 Rian Oliveira
+Copyright 2025 Rian Oliveira
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

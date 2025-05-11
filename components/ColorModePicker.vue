@@ -30,14 +30,6 @@ const hoveredMode = ref(null);
 </script>
 
 <style scoped>
-.picker {
-  position: fixed;
-  top: 1rem;
-  right: 1.25rem;
-  z-index: 2;
-  padding: 6px 12px;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -64,6 +56,14 @@ li:hover {
 
 li:last-child .tooltip {
   left: -1.25rem;
+}
+
+.picker {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  z-index: 2;
+  padding: 6px 12px;
 }
 
 .preferred {

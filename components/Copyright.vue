@@ -1,5 +1,5 @@
 <template>
-    <p>&copy; 2021-2024</p>
+    <p>&copy; 2021-2025</p>
 </template>
 
 <style scoped>
